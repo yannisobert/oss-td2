@@ -1,0 +1,28 @@
+{
+    "name": "yannisobert/oss-td2",
+    "description": "oss-td2 package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Yannisobert\\OssTd2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yannisobert",
+            "email": "90550556+yannisobert@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "php": ">= 8.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10.2"
+    },
+    "scripts": {
+        "phpstan": "@php vendor/bin/phpstan analyze src --level=max",
+        "test": "@php vendor/bin/phpunit tests"
+    }
+}
